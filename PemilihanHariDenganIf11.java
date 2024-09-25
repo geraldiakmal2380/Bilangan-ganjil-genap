@@ -6,6 +6,8 @@ public class PemilihanHariDenganIf11 {
         
         System.out.print("Masukan Hari dalam angka 1-7 : ");
         int Dayname = inputan.nextInt();
+        
+        inputan.close();//mencegah resorce leak dan meningkatkan performa
 
         if (Dayname >=1 &&  Dayname <= 5){
             System.out.print("Weekday");

@@ -11,6 +11,8 @@ class PemilihanBilangan11{
         System.out.print("Masukan Angka : ");
         int angka = inputan.nextInt();
 
+        inputan.close();
+
         //Java Short Hand If...Else (Ternary Operator)
         String hasilbilangan = (angka%2 == 0 ) ? "Merupakan Bilangan genap" : "Merupakan Bilangan ganjil";
         System.out.print("angka "+angka+" "+hasilbilangan);

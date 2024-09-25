@@ -11,6 +11,8 @@ public class PemilihanHari11 {
             System.out.print("masukan nama hari di Bahasa Inggris : ");
             Dayname = inputan.nextLine();
 
+            inputan.close();//mencegah resorce leak dan meningkatkan performa
+
             switch (Dayname.toLowerCase()) {
                 case "monday":
                 case "tuesday":

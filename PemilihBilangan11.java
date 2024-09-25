@@ -10,6 +10,9 @@ class PemilihanBilangan11{
         //mulai eksekusi program
         System.out.print("Masukan Angka : ");
         int angka = inputan.nextInt();
+
+        inputan.close();//mencegah resorce leak dan meningkatkan performa
+
         if (angka%2 == 0){
             System.out.println("Angka"+angka+"Termasuk Bilangan genap");
         }
